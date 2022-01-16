@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <style>
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .photo-frame {
+            width: 300px;
+            height: 200px;
+            border: 2px solid blue;
+            border-radius: 5px;
+            position: relative;
+            margin: 15px;
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 10px;
+
+        }
+
+        .photo-detail {
+            display: none;
+            position: absolute;
+            width: 300px;
+            top: 0;
+        }
+
+        .photo {
+            width: 100%;
+        }
+
+        .photo-frame:hover .photo-detail {
+            display: block;
+            background-color: rgb(209, 205, 223, 0.7);
+        }
+
+        .photo-detail h3 {
+            background-color: black;
+            color: white;
+            text-align: center;
+
+        }
+
+        .photo-frame:hover .photo {
+            transform: scale(1.3) rotate(-60deg);
+            transition: transform 2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Photos of puppy</h1>
+    <section>
+        <h3>Puppy album</h3>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/puppy.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>Puppy</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus cumque provident non sed
+                        nisi assumenda minima aliquam. Impedit eum recusandae, beatae ratione quia amet, aut eius
+                        temporibus, totam inventore expedita!</p>
+                </div>
+            </div>
+
+            <div class="photo-album">
+                <div class="photo-frame">
+                    <div class="photo">
+                        <img src="images/puppy.jpg" alt="">
+                    </div>
+                    <div class="photo-detail">
+                        <h3>Puppy</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus cumque provident non
+                            sed
+                            nisi assumenda minima aliquam. Impedit eum recusandae, beatae ratione quia amet, aut eius
+                            temporibus, totam inventore expedita!</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-album">
+                    <div class="photo-frame">
+                        <div class="photo">
+                            <img src="images/puppy.jpg" alt="">
+                        </div>
+                        <div class="photo-detail">
+                            <h3>Puppy</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus cumque provident
+                                non sed
+                                nisi assumenda minima aliquam. Impedit eum recusandae, beatae ratione quia amet, aut
+                                eius
+                                temporibus, totam inventore expedita!</p>
+                        </div>
+                    </div>
+
+                    <div class="photo-album">
+                        <div class="photo-frame">
+                            <div class="photo">
+                                <img src="images/puppy.jpg" alt="">
+                            </div>
+                            <div class="photo-detail">
+                                <h3>Puppy</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus cumque
+                                    provident non sed
+                                    nisi assumenda minima aliquam. Impedit eum recusandae, beatae ratione quia amet, aut
+                                    eius
+                                    temporibus, totam inventore expedita!</p>
+                            </div>
+                        </div>
+                        <div class="photo-album">
+                            <div class="photo-frame">
+                                <div class="photo">
+                                    <img src="images/puppy.jpg" alt="">
+                                </div>
+                                <div class="photo-detail">
+                                    <h3>Puppy</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus cumque
+                                        provident non sed
+                                        nisi assumenda minima aliquam. Impedit eum recusandae, beatae ratione quia amet,
+                                        aut
+                                        eius
+                                        temporibus, totam inventore expedita!</p>
+                                </div>
+                            </div>
+                            <div class="photo-album">
+                                <div class="photo-frame">
+                                    <div class="photo">
+                                        <img src="images/puppy.jpg" alt="">
+                                    </div>
+                                    <div class="photo-detail">
+                                        <h3>Puppy</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus cumque
+                                            provident non sed
+                                            nisi assumenda minima aliquam. Impedit eum recusandae, beatae ratione quia
+                                            amet, aut
+                                            eius
+                                            temporibus, totam inventore expedita!</p>
+                                    </div>
+                                </div>
+                                <div class="photo-album">
+                                    <div class="photo-frame">
+                                        <div class="photo">
+                                            <img src="images/puppy.jpg" alt="">
+                                        </div>
+                                        <div class="photo-detail">
+                                            <h3>Puppy</h3>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                                                cumque
+                                                provident non sed
+                                                nisi assumenda minima aliquam. Impedit eum recusandae, beatae ratione
+                                                quia amet, aut
+                                                eius
+                                                temporibus, totam inventore expedita!</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+    </section>
+
+</body>
+
+</html>
